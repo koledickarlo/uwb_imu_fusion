@@ -1,18 +1,15 @@
 import csv
-import itertools
 import math
 from typing import List
 
-import gtsam
 import matplotlib.pyplot as plt
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
-from data import UwbMeasurement, UwbData
 
 from csv_loader import loadUWBCSVReturnFormatedDataFrame
 
 SPEED_OF_LIGHT = 299702.547
 
+#Lots of old utils used during development, needs refactoring
 
 class UWB:
     def __init__(self, time: float, distance: float, index: int) -> None:

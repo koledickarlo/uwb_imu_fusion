@@ -6,7 +6,7 @@ import numpy as np
 import utils
 from data import ImuData, ImuParams, UwbData
 from smoothers import ImuUwbLoosely, ImuUwbTightly
-from trilateration import estimate_positions
+from multilateration import estimate_positions
 
 
 def main():
